@@ -14,12 +14,8 @@ const getDay = () => {
 
 const getUTCTime = () => {
   const now = new Date();
-
-  const year = now.getUTCFullYear();
-  const month = now.getUTCMonth() + 1;
-  const day = now.getUTCDate();
-
-  let ms = Date.UTC(year, month, day)
+  
+  let ms = now.getTime();
   return currentTimeEl.textContent = ms
 }
 
